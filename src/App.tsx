@@ -1,19 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import { Outlet } from 'react-router-dom'
-import NavBar from './component/NavBar'
+import { useState } from "react";
+import { Outlet } from "react-router-dom";
+import NavBar from "./component/NavBar";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <NavBar />
-      <Outlet/>
-<></>
+      <div className="container">
+        <NavBar />
+        <Outlet />
+      </div>
+
+      <></>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
